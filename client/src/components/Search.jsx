@@ -6,7 +6,7 @@ function Search() {
   const [email, setEmail] = React.useState("");
   const [userData, setUserData] = React.useState(null);
 
-  const API_URL = "https://admitkard-rust.vercel.app/api";
+  const API_URL = "https://admitkard-rust.vercel.app";
   const handleSubmit = async () => {
     const resp = await axios.get(`${API_URL}/search/?email=${email}`);
     if (resp.status === 200) {

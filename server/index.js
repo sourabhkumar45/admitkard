@@ -34,8 +34,8 @@ app.use(function (req, res, next) {
   );
   res.header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS");
 });
-app.use("/api/add", addRouter);
-app.use("/api/search", searchRouter);
+app.use("/add", addRouter);
+app.use("/search", searchRouter);
 app.listen(PORT, (err) => {
   if (err) {
     console.log(err.message);
