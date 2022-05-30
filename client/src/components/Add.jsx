@@ -17,7 +17,7 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://admitkard-rust.vercel.app";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
